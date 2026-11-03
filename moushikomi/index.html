@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>行事のお申し込み｜天理教西遠支部</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&family=BIZ+UDPGothic:wght@400;700&display=swap">
+<style>
+  :root{
+    --bg:#F7F5EF;--surface:#FFFFFF;--ink:#2E3440;--ink-soft:#6B7280;--line:#E4E0D6;
+    --accent:#3B5B8C;--accent-ink:#2F4A74;--accent-soft:#E6ECF5;--done:#9CA3AF;
+    --shadow:0 1px 2px rgba(46,52,64,.06),0 8px 24px rgba(46,52,64,.06);
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --bg:#1B1F27;--surface:#252A34;--ink:#ECEFF4;--ink-soft:#A3AAB8;--line:#363C48;
+      --accent:#8FB0E0;--accent-ink:#A9C3EA;--accent-soft:#2B3445;--done:#6B7280;
+      --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.28);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#1B1F27;--surface:#252A34;--ink:#ECEFF4;--ink-soft:#A3AAB8;--line:#363C48;
+    --accent:#8FB0E0;--accent-ink:#A9C3EA;--accent-soft:#2B3445;--done:#6B7280;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.28);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:"BIZ UDPGothic","Hiragino Sans","Yu Gothic UI",system-ui,sans-serif;
+    font-size:17.5px;line-height:1.85;letter-spacing:.01em;
+  }
+  .wrap{max-width:39rem;margin:0 auto;padding:0 16px 64px}
+  header{padding:40px 0 4px;text-align:center}
+  .org{color:var(--ink-soft);font-size:.9rem;letter-spacing:.08em}
+  h1{
+    font-family:"Zen Maru Gothic",sans-serif;font-weight:700;
+    font-size:1.5rem;margin:4px 0 0;letter-spacing:.04em;
+  }
+  .lead{color:var(--ink-soft);text-align:center;margin:10px 0 26px;font-size:.95rem}
+  .events{display:flex;flex-direction:column;gap:16px}
+  .event{
+    background:var(--surface);border:1px solid var(--line);border-radius:16px;
+    padding:20px 20px 18px;box-shadow:var(--shadow);
+  }
+  .event h2{
+    font-family:"Zen Maru Gothic",sans-serif;font-size:1.2rem;
+    margin:0 0 8px;line-height:1.5;
+  }
+  .event dl{margin:0 0 14px;display:grid;grid-template-columns:auto 1fr;gap:2px 12px}
+  .event dt{color:var(--ink-soft);font-size:.9rem;padding-top:2px}
+  .event dd{margin:0}
+  .event .note{font-size:.92rem;color:var(--ink-soft);margin:0 0 14px}
+  .btn{
+    display:block;text-align:center;text-decoration:none;
+    background:var(--accent);color:#fff;border-radius:999px;
+    padding:13px 16px;font-weight:700;font-size:1.05rem;
+  }
+  :root[data-theme="dark"] .btn{color:#1B1F27}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn{color:#1B1F27}}
+  .event.closed{opacity:.7}
+  .event.closed .btn{background:var(--done);pointer-events:none}
+  .empty{
+    text-align:center;color:var(--ink-soft);background:var(--surface);
+    border:1px dashed var(--line);border-radius:16px;padding:28px 16px;
+  }
+  footer{
+    margin-top:34px;padding-top:20px;border-top:1px solid var(--line);
+    text-align:center;color:var(--ink-soft);font-size:.85rem;line-height:1.8;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="org">天理教 西遠支部</div>
+    <h1>行事のお申し込み</h1>
+  </header>
+  <p class="lead">参加したい行事の「申し込む」ボタンから<br>お申し込みください。</p>
+
+  <div class="events">
+    <!--
+      行事を足すときは、下の <section> を1つコピーして書き換える。
+      data-deadline は申込締切日（この日を過ぎると自動で「受付終了」になる）。
+    -->
+    <section class="event" data-deadline="2026-11-21">
+      <h2>ようぼくのつどい</h2>
+      <dl>
+        <dt>日時</dt><dd>11月28日（土）午前10時〜午後1時<br>（受付 午前9時30分）</dd>
+        <dt>会場</dt><dd>東濵名分教会<br>（浜松市中央区天竜川町149-2）</dd>
+        <dt>締切</dt><dd>11月21日（土）</dd>
+      </dl>
+      <p class="note">参加無料・お話の間の託児もできます。</p>
+      <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSc9RQADlwr_0JOuwXDTwGGJAuan-CPzeu65nU7wJBGl-NMwHQ/viewform">申し込む</a>
+    </section>
+  </div>
+
+  <p class="empty" hidden>いま受付中の行事はありません。<br>決まりしだい、こちらでご案内します。</p>
+
+  <footer>天理教 西遠支部</footer>
+</div>
+<script>
+  // 締切日を過ぎた行事は「受付終了」にして一覧の下へ回す
+  (function(){
+    var today = new Date(); today.setHours(0,0,0,0);
+    var list = document.querySelector('.events');
+    var open = 0;
+    Array.prototype.slice.call(list.querySelectorAll('.event')).forEach(function(ev){
+      var d = new Date(ev.getAttribute('data-deadline') + 'T00:00:00');
+      if (today > d) {
+        ev.classList.add('closed');
+        var b = ev.querySelector('.btn');
+        b.textContent = '受付は終了しました';
+        b.removeAttribute('href');
+        list.appendChild(ev);
+      } else {
+        open++;
+      }
+    });
+    if (open === 0) document.querySelector('.empty').hidden = false;
+  })();
+</script>
+</body>
+</html>
